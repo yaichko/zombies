@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		img{
+			width: 100px; 
+			position: absolute; 
+			display: none;
+		}
+
+	
+	</style>
+</head>
+<body>
+	<div style="background-image: url(game.png); height: 1000px; background-size: 100% 100%">
+		
+		<button class="btn btn-warning size_flower"  style="position: absolute;  margin-left: 20%; margin-top: 3%">Увеличить цветы</button>
+		<button class="btn btn-success size_shooter" style="position: absolute;  margin-left: 30%; margin-top: 3%" >Увеличить горох</button>
+		<button class="btn btn-danger upgrade_flower" style="position: absolute;  margin-left: 40%; margin-top: 3%" >Улучшить цветы</button>
+		<button class="btn btn-primary size_nuts" style="position: absolute;  margin-left: 50%; margin-top: 3%" >Увеличить орех( ͡° ͜ʖ ͡°)</button>
+		<button class="btn btn-primary zombies_spawn" style="position: absolute;  margin-left: 65%; margin-top: 3%" >???</button>
+
+		<!--цветы 1 ряд-->
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 13%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 19%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 25%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 31%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 37%; ">
+		<button class="flower_btn" style="color: yellow; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 17%; ">PLANT</button>	
+		<button class="flower_btn" style="color: yellow; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 23%; ">PLANT</button>
+		<button class="flower_btn" style="color: yellow; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 29%; ">PLANT</button>
+		<button class="flower_btn" style="color: yellow; font-weight: bold; position: absolute;  margin-left: 33%; margin-top: 35%; ">PLANT</button>
+		<button class="flower_btn" style="color: yellow; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 41%; ">PLANT</button>
+
+		<!--горох 2 ряд-->
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 40%; margin-top: 13%;">		
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 40%; margin-top: 19%; ">	
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 40%; margin-top: 25%;  ">	
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 40%; margin-top: 31%;">
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 40%; margin-top: 37%; ">		
+		<button class="shooter_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 17%; ">PLANT</button>
+		<button class="shooter_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 23%; ">PLANT</button>	
+		<button class="shooter_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 29%; ">PLANT</button>
+		<button class="shooter_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 35%; ">PLANT</button>
+		<button class="shooter_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 41%; ">PLANT</button>		
+
+		<!--арехи 3 ряд-->
+		<img class="nut" src="nut.png"  style=" margin-left: 47%; margin-top: 13%;">		
+		<img class="nut" src="nut.png"  style=" margin-left: 47%; margin-top: 19%; ">	
+		<img class="nut" src="nut.png"  style=" margin-left: 47%; margin-top: 25%;  ">	
+		<img class="nut" src="nut.png"  style=" margin-left: 47%; margin-top: 31%;">
+		<img class="nut" src="nut.png"  style=" margin-left: 47%; margin-top: 37%; ">		
+		<button class="nut_btn" style="color: orange; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 17%; ">PLANT</button>
+		<button class="nut_btn" style="color: orange; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 23%; ">PLANT</button>	
+		<button class="nut_btn" style="color: orange; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 29%; ">PLANT</button>
+		<button class="nut_btn" style="color: orange; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 35%; ">PLANT</button>
+		<button class="nut_btn" style="color: orange; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 41%; ">PLANT</button>		
+
+		<!--scp сасааааать-->
+		<img class="zombie" src="bucket.png"  style=" margin-left: 67%; margin-top: 13%;">		
+		<img class="zombie" src="bucket.png"  style=" margin-left: 67%; margin-top: 19%; ">	
+		<img class="zombie" src="bucket.png"  style=" margin-left: 67%; margin-top: 25%;  ">	
+		<img class="zombie" src="bucket.png"  style=" margin-left: 67%; margin-top: 31%;">
+		<img class="zombie" src="bucket.png"  style=" margin-left: 67%; margin-top: 37%; ">	
+									
+	</div>
+
+<script>
+	 
+
+	let flowers = document.querySelectorAll(".flower");
+	let flower_btn = document.querySelectorAll(".flower_btn");
+
+	let shooter_btn = document.querySelectorAll(".shooter_btn");
+	let shooter = document.querySelectorAll(".shooter");
+
+	let nut_btn = document.querySelectorAll(".nut_btn");
+	let nuts = document.querySelectorAll(".nut");
+
+	let zombies = document.querySelectorAll(".zombie");
+
+	let shooter_pi = 0;
+
+
+	
+
+
+
+	
+
+
+	//нажатие на цветы
+	flower_btn[0].onclick = function(){
+		flowers[0].style.display = "block"
+		flower_btn[0].style.display = "none"
+	}    
+	flower_btn[1].onclick = function(){
+		flowers[1].style.display = "block"
+		flower_btn[1].style.display = "none"
+	}   
+	flower_btn[2].onclick = function(){
+		flowers[2].style.display = "block"
+		flower_btn[2].style.display = "none"
+	}   
+	flower_btn[3].onclick = function(){
+		flowers[3].style.display = "block"
+		flower_btn[3].style.display = "none"
+	}   
+	flower_btn[4].onclick = function(){
+		flowers[4].style.display = "block"
+		flower_btn[4].style.display = "none"
+	}   
+
+
+	//нажатие на горох
+	shooter_btn[0].onclick = function(){
+		shooter[0].style.display = "block"
+		shooter_btn[0].style.display = "none"
+	}   
+	shooter_btn[1].onclick = function(){
+		shooter[1].style.display = "block"
+		shooter_btn[1].style.display = "none"
+	}   
+	shooter_btn[2].onclick = function(){
+		shooter[2].style.display = "block"
+		shooter_btn[2].style.display = "none"
+	}   
+	shooter_btn[3].onclick = function(){
+		shooter[3].style.display = "block"
+		shooter_btn[3].style.display = "none"
+	}   
+	shooter_btn[4].onclick = function(){
+		shooter[4].style.display = "block"
+		shooter_btn[4].style.display = "none"
+	}   
+
+
+	//deez nuts
+		nut_btn[0].onclick = function(){
+			nuts[0].style.display = "block"
+			nut_btn[0].style.display = "none"
+		}    
+		nut_btn[1].onclick = function(){
+			nuts[1].style.display = "block"
+			nut_btn[1].style.display = "none"
+		}   
+		nut_btn[2].onclick = function(){
+			nuts[2].style.display = "block"
+			nut_btn[2].style.display = "none"
+		}   
+		nut_btn[3].onclick = function(){
+			nuts[3].style.display = "block"
+			nut_btn[3].style.display = "none"
+		}   
+		nut_btn[4].onclick = function(){
+			nuts[4].style.display = "block"
+			nut_btn[4].style.display = "none"
+		}  
+
+	document.querySelector(".size_flower").onclick = function(){
+		for(let index = 0; index<5; index = index + 1){
+		flowers[index].style.width = "125px"
+	}
+	}
+	document.querySelector(".size_shooter").onclick = function(){
+		for(let index = 0; index<5; index = index + 1){
+		shooter[index].style.width = "125px"
+	}
+	}
+	document.querySelector(".upgrade_flower").onclick = function(){
+		for(let index = 0; index<5; index = index + 1){
+		flowers[index].src = "twins.png"
+	}
+	}
+	document.querySelector(".size_nuts").onclick = function(){
+		for(let index = 0; index<5; index = index + 1){
+		nuts[index].style.width = "150px"
+	}
+	}
+	document.querySelector(".zombies_spawn").onclick = function(){
+		for(let index = 0; index<5; index = index + 1){
+		zombies[index].style.display = "block"
+		zombies[index].style.width = "125px"
+	}
+	}
+	
+
+	
+
+
+
+	
+</script>
+</body>
+</html>
